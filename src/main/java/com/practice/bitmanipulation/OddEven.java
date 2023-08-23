@@ -14,11 +14,12 @@ package com.practice.bitmanipulation;
  * ------------------------
  * //     0 1 0 0 (4 is even)
  * //     1 1 1 0 (14 is even)
+ * <ul/>
+ *
  * <p>
  *   If we perform & of 1 with any number, the result will be 1 if and only if number is odd else 0;
  *   Special case for 0 and 1;
  * <p>
- * <ul/>
  */
 public class OddEven {
 
