@@ -2,6 +2,7 @@ package com.practice.bitmanipulation;
 
 /**
  * Count number of set bits.
+ * 
  */
 public class CountSetBit {
 
