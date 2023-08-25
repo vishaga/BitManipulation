@@ -39,6 +39,7 @@ public class CountSetBit {
 
 
   /**
+   * Kernighan's Algorithm
    * n & (n - 1) will remove the last set bit.
    *
    * <p>
@@ -51,7 +52,9 @@ public class CountSetBit {
   private static int countSetBit_2(int n) {
     int count = 0;
     while (n > 0) {
+      //Kernighan's Algorithm
       n = n & (n - 1);
+      System.out.println("Kernighan's Algorithm: "+n);
       count++;
     }
     return count;
