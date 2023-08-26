@@ -29,7 +29,7 @@ public class Sample {
     System.out.println(" ====> " + Integer.toBinaryString(76));
     System.out.println(" ====> " + Integer.toBinaryString(-76));
 
-
+    System.out.println(Integer.valueOf("100100110001000",2));
   }
 
 }
