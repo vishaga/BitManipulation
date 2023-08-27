@@ -34,6 +34,7 @@ public class DigitSumEven {
       System.out.println(num + " : " + countEven(num));
     }
   }
+  
 
   public static int countEven(int num) {
     int res = 0;
