@@ -42,7 +42,7 @@ public class SignCheck {
     System.out.print(Arrays.toString(array));
     int result = 0;
     for (int x : array) {
-      result ^= (x < 0) ? -1 : 1;
+      result = (result < 0) ^ (x < 0) ? -1 : 1;
     }
     System.out.println(" , result sign = " + result);
   }
