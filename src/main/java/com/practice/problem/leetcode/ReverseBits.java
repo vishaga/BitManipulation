@@ -42,16 +42,13 @@ package com.practice.problem.leetcode;
 public class ReverseBits {
 
   public static void main(String[] args) {
-    int array[] = {5, 3, 7, 8, 11, 19, 32,43261596};
-    //System.out.println(Integer.valueOf("00000010100101000001111010011100",2));
+    int array[] = {5, 3, 7, 8, 11, 19, 32, 43261596};
     for (int x : array) {
-      int res = reverseBits(x);
-      System.out.println(res + ", "+Integer.toBinaryString(res));
+      System.out.println(reverseBits(x));
     }
   }
 
   public static int reverseBits(int n) {
-    //System.out.println(Integer.toBinaryString(n));
     int result = 0;
     for (int i = 0; i < 32; i++) {
       int currentBit = n & 1;
@@ -59,7 +56,6 @@ public class ReverseBits {
       result |= reverseBit;
       n >>= 1;
     }
-    //System.out.println(Integer.toBinaryString(result));
     return result;
 
   }
