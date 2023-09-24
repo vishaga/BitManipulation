@@ -40,18 +40,20 @@ package com.practice.problem.leetcode;
 public class LeetCode2220 {
 
   public static void main(String[] args) {
-
+    System.out.println(minBitFlips(10, 7));
+    System.out.println(minBitFlips(3, 4));
   }
 
-  //TODO
-  public int minBitFlips(int start, int goal) {
+  public static int minBitFlips(int start, int goal) {
     //XOR is very much needed as this will return value where both bits are different
     // and this is what is very much required.
     int xor = start ^ goal;
+    // now xor above will have 1 set bit where ever bits were different in start and goal.
+    //so now count set bits and that's it.
     int count = 0;
     while (xor > 0) {
-
-      xor >>= 1;
+      count++;
+      xor = xor & (xor - 1);
     }
     return count;
   }
